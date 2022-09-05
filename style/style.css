@@ -1,3 +1,295 @@
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* Navbar  */
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #f1f1f1;
+}
+.navbar .logo {
+    flex-basis: 30%;
+    padding: .3rem;
+}
+.navbar .logo img {
+    width: 3rem;
+    margin-left: 4rem;
+}
+.navbar .menu {
+    flex-basis: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.navbar .menu ul {
+    list-style-type: none;
+}
+.navbar .menu ul li {
+    float: left;
+}
+.navbar .menu ul li a {
+    color: #333;
+    padding: 1.27rem 1rem;
+    display: block;
+    text-decoration: none;
+}
+.navbar .menu ul li a:hover {
+    color: #000;
+}
+
+
+/* Home  */
+.home, .about {
+    display: flex;
+    flex-flow: row wrap;
+}
+.section:first-of-type {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+}
+.text {
+    padding: 1rem 0rem 0rem 4.5rem;
+}
+.text h2 {
+    font-size: 2rem;
+    padding: .5rem 0rem;
+}
+span {
+    color: #FF6347;
+}
+.text p {
+    padding: .26rem 0rem 1rem;
+}
+.text button {
+    border: none;
+    color: #fff;
+    background-color: #FF6347;
+    padding: 1rem 2rem;
+    border-radius: .2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .5s all ease;
+}
+.text button:hover {
+    background-color: #e75c44;
+}
+.section:last-of-type {
+    flex-basis: 50%;
+}
+.image {
+    display: flex;
+    justify-content: center;
+}
+img {
+    width: 60%;
+}
+
+
+/* About  */
+.about {
+    margin: 4rem 0rem;
+}
+.about .section:last-of-type {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+}
+.fa-download {
+    padding: 0rem .25rem 0rem 0rem;
+}
+
+
+/* Work  */
+.work {
+    background-color: #f1f1f1;
+    margin: 7rem 0rem;
+    padding: 2rem 0rem 7rem;
+}
+.work h2 {
+    text-align: center;
+    font-size: 2em;
+    padding: 4rem 0rem;
+}
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.col {
+    width: 20%;
+    margin: 0rem .5rem;
+    border-radius: .5rem;
+    padding: .5rem;
+    background-color: #fff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15)
+    0px 2px 6px 2px;
+}
+.col img {
+    width: 100%;
+}
+.col:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.col h3 {
+    font-size: 1rem;
+    padding: .5rem 0rem;
+}
+
+
+/* Contact  */
+.contact {
+    margin: 7rem 0rem;
+    padding: 2rem 0rem 0rem;
+}
+.contact .text {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 5rem 1rem;
+    background-image: url(../image/Group.png);
+    background-size: 100% 100%;
+}
+.left {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    color: #fff;
+}
+
+
+/* Connected  */
+.connected {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    padding: 2rem;
+}
+.connected .footer-text a {
+    padding: .5rem;
+    letter-spacing: .1rem;
+    font-size: 1.2rem;
+    margin-left: -5.5rem;
+    text-decoration: none;
+    display: block;
+}
+.connected .icon {
+    margin-left: -3rem;
+}
+.fa-brands {
+    font-size: 2rem;
+    padding: .5rem .5rem;
+    color: teal;
+}
+
+
+/* Footer  */
+.footer {
+    text-align: center;
+    padding: 2rem 0em;
+}
+
+
+/* Responsive  */
+@media screen and (max-width: 992px) {
+    .navbar {
+        flex-flow: column wrap;
+    }
+    .navbar .menu {
+        flex-basis: 100%;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+    }
+    .navbar .menu ul li {
+        float: none;
+    }
+    .navbar .menu ul li a {
+        color: #333;
+        padding: 1rem 1.8rem;
+        text-decoration: none;
+    }
+    .navbar .menu ul li a:hover {
+        color: #000;
+        background-color: #999;
+        text-decoration: none;
+    }
+    .navbar .logo img {
+        width: 2.5rem;
+        margin-left: 1.5rem;
+    }
+    .home, .about {
+        flex-flow: column wrap;
+    }
+    .text {
+        padding: 3rem 0rem 0rem 2rem;
+    }
+    .row {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .col {
+        width: 60%;
+        margin: .5rem;
+        border-radius: .5rem;
+        padding: .5rem;
+        background-color: #fff;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15)
+        0px 2px 6px 2px;
+    }
+    .contact .text {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        padding: 5rem 1rem;
+        background-image: url(../image/Group.png);
+        background-size: 100% 100%;
+    }
+    .left {
+        margin: 3rem 0rem;
+    }
+    .connected {
+        background-color: #f1f1f1;
+        display: flex;
+        flex-flow: column wrap;
+        align-content: flex-start;
+        padding: 1rem;
+    }
+    .connected .footer-text a {
+        padding: .5rem 0rem;
+        letter-spacing: 0rem;
+        font-size: 1rem;
+        margin-left: 0rem;
+        text-decoration: none;
+        display: block;
+    }
+    .connected .icon {
+        margin-left: 0rem;
+        margin-left: -.5rem;
+    }
+    .fa-brands {
+        font-size: 1.2rem;
+        padding: .5rem .5rem;
+        color: teal;
+    }
+}
+@media screen and (max-width: 300px) {
+    .text {
+        padding: 3rem 0rem 0rem .5rem;
+    }
+    .col {
+        width: 90%;
+    }
 }
